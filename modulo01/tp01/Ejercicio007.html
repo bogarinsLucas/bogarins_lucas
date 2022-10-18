@@ -1,0 +1,22 @@
+<!-- Ejercicio 7:
+Ejecutar el programa en el navegador. Guardarlo con el nombre: Ejercicio7.html’ Pasar
+valores por teclado. Anotar con comentarios que hace el programa -->
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Ejercicio 7</title> 
+<meta charset="UTF-8">
+</head>
+    <body>
+    <script>
+        //define dos variables
+        let dato, resultado;
+        //abre dos recuadros para insertar nombre y apellido
+        val1 = window.prompt("Introduce tu nombre", "...");
+        val2 = window.prompt("Introduce tu apellido", "...");
+        resultado = `Concatenando tu nombre y apellido es: ${val1} ${val2} ` ;
+        //imprime en pantalla los datos ingresados uno al lado de otro
+        document.write(resultado);
+    </script>
+    </body>
+</html>
