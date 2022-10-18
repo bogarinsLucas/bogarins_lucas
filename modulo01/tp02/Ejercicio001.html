@@ -1,0 +1,57 @@
+<!--Ejercicio 1:
+A partir del siguiente array que se proporciona: 
+var valores = [verdadero, false, 2, "hola","mundo", 3, char];
+1. Determinar cuál de los elementos de texto es mayor, es decir el que contenga más letras.
+2. Imprimir los elementos de menor a mayor cantidad de letras.
+3. Determinar el resultado de las cuatro operaciones matemáticas realizadas con los dos
+elementos numéricos.-->
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Ejercicio 01</title> 
+<meta charset="UTF-8">
+</head>
+    <body>
+    <script>
+    var verdadero, char
+const ordenarString = []
+const listaNum = []
+var valores = [verdadero, false, 2,'hola','mundo', 3, char];
+    for (let i=0 ; i<valores.length ; i++){
+      if (typeof valores[i] === 'string'){
+        ordenarString.push(valores[i])
+      }
+    }
+    var Mayor=0;
+    var mayorString=0;
+      for (let i=0; i<ordenarString.length; i++) {
+        if (ordenarString[i].length>Mayor){
+            mayorString=ordenarString[i];
+            Mayor=ordenarString[i].length;
+        }
+      }
+    for (let i=0 ; i<valores.length ; i++){
+      if (typeof valores[i] === 'number'){
+        listaNum.push(valores[i])
+      }
+    }
+    var sumNum = 0
+    var restaNum = 0
+    var prodNum = 1
+    var divNum = 0
+    for (let i=0 ; i<listaNum.length ; i++){
+      sumNum+=listaNum[i]
+      restaNum-=listaNum[i]
+      prodNum*=listaNum[i]
+      divNum = listaNum[0]
+      divNum /= listaNum[i] 
+    }
+    document.write ("La palabra con más letras es: "+mayorString+"<br>");
+    document.write ("Imprimir los elementos de menor a mayor: "+"<br>"+ordenarString.sort (function(a,b){return a.lenght - b.lenght})+"<br>");
+    document.write ("La suma de los números es: " +sumNum+"<br>");
+    document.write ("La resta de los números es: " +restaNum+"<br>");
+    document.write ("El producto de los números es: " +prodNum+"<br>");
+    document.write ("El cociente de los números es: " +divNum+"<br>");
+    </script>
+    </body>
+</html>

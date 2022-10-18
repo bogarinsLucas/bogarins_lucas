@@ -1,0 +1,37 @@
+<!--Ejercicio 9:
+Crear un programa que recibe las notas de un alumno, todos los números deben ser naturales
+<11. Debe calcular el promedio. Por último imprimir en pantalla si el valor de media es < 5
+“Reprobado”, entre 6 y 8 “Aprobado” y si es mayor a 8 “Sobresaliente”-->
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Ejercicio 09</title> 
+<meta charset="UTF-8">
+</head>
+    <body>
+    <script>
+    const notasAl= [10,8,6]
+    var sumNotas=0
+    function promedio (notasAl){
+        
+        for (i=0;i<notasAl.length;i++){
+            sumNotas+=notasAl[i]
+        }
+        return sumNotas/(notasAl.length)
+    }
+    switch(promedio(notasAl)) {
+    case 1,2,3,4:
+    // code block
+    text = 'Reprobado'
+    break;
+    case 6,7,8:
+    // code block
+    text= 'Aprobado'
+    break;
+    case 9,10:
+    text = 'Sobresaliente'
+    }
+    document.write(text)
+    </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!--Ejercicio 10:
+Escribir un programa que reciba el número del mes y devuelva si tiene 31, 30 o menos días.
+Por ejemplo:12 = tiene 31 días-->
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Ejercicio 10</title> 
+<meta charset="UTF-8">
+</head>
+    <body>
+    <script>
+    switch (new Date().getMonth()+1) {
+    case 0:
+    case 2:
+    case 4:
+    case 6:
+    case 7:
+    case 9:
+    case 10:
+        day = "Mes tiene 31 dias";
+        break;    
+    case 3:
+    case 5:
+    case 8:
+    case 11:    
+        day = "Mes tiene 30 dias";
+        break;
+    case 1:
+        day = "Mes tiene 28 dias";
+        break;
+    }
+    document.write(day)
+    </script>
+    </body>
+</html>

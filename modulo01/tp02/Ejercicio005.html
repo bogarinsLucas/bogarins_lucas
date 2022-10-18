@@ -1,0 +1,30 @@
+<!--Ejercicio 5:
+Crear una función que muestre información sobre una cadena de texto que se le pasa como
+argumento. A partir de la cadena que se le pasa, la función determina si esa cadena está
+formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.-->
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Ejercicio 05</title> 
+<meta charset="UTF-8">
+</head>
+    <body>
+    <script>
+    function pasarString (string){
+        var resultado = 'El string \' '+string+'\' '
+        if (string == string.toUpperCase()){
+            resultado+= 'esta formada por mayusculas'
+        }else
+        if (string == string.toLowerCase()){
+            resultado+= 'esta formada por minusculas'
+        }else{
+            resultado+= 'esta formada por mayusculas y minusculas'
+        }
+        return resultado
+    }
+    alert(pasarString('PRUEBA'))
+    alert(pasarString('prueba'))
+    alert(pasarString('Prueba'))
+    </script>
+    </body>
+</html>

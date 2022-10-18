@@ -1,0 +1,21 @@
+<!--Ejercicio 7:
+Escribir una función que reciba un texto y lo devuelva al revés.-->
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Ejercicio 07</title> 
+<meta charset="UTF-8">
+</head>
+    <body>
+    <script>
+    function invertxt (txt){
+        var invert = ""
+        for (const letra of txt){
+            invert = letra + invert
+        }
+        return invert
+    }
+    document.write(invertxt('programar'))
+    </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!--Ejercicio 6:
+Escribir un script que muestre la posición de la primera vocal de un texto introducido por
+teclado.Por ejemplo: perro = “e” es la letra Nº2 ; árbol = “a” es la letra Nº1-->
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Ejercicio 06</title> 
+<meta charset="UTF-8">
+</head>
+    <body>
+    <script>
+    var texto
+    var vocales = /[aeiouAEIOU]/
+    var pos
+    function info (texto){
+        return texto.match(vocales)
+    }
+    alert(info('verdura'))
+    </script>
+    </body>
+</html>
