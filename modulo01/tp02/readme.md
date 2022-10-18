@@ -43,14 +43,14 @@ devuelve como resultado una cadena de texto que indica si el número es par o im
 por pantalla el resultado devuelto por la función.
 Por ejemplo 2=par; 5=impar…
 
-####Ejercicio 5:
+#### Ejercicio 5:
 Crear una función que muestre información sobre una cadena de texto que se le pasa como
 argumento. A partir de la cadena que se le pasa, la función determina si esa cadena está
 formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.
 
 #### Ejercicio 6:
 Escribir un script que muestre la posición de la primera vocal de un texto introducido por
-teclado.Por ejemplo: perro = “e” es la letra Nº2 ; árbol = “a” es la letra Nº1.
+teclado. Por ejemplo: perro = “e” es la letra Nº2 ; árbol = “a” es la letra Nº1.
 
 #### Ejercicio 7:
 Escribir una función que reciba un texto y lo devuelva al revés.
